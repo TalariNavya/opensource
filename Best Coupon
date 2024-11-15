@@ -1,0 +1,6 @@
+bill_amount = int(input())
+discount_10_percent = 0.10 * bill_amount
+flat_discount = 100
+max_discount = max(discount_10_percent, flat_discount)
+final_amount = bill_amount - max_discount
+print(int(final_amount))
