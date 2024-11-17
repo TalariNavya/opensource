@@ -1,0 +1,8 @@
+def can_achieve_marks(n, x, y):
+    for correct in range(n + 1):
+        total_marks = correct * x
+        if total_marks == y:
+            return "YES"
+    return "NO"
+n, x, y = map(int, input().split())
+print(can_achieve_marks(n, x, y))
