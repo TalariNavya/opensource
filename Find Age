@@ -1,0 +1,12 @@
+def vignesh_age_at_charan_x(current_vignesh_age, current_charan_age, x):
+    age_difference = current_charan_age - current_vignesh_age
+    vignesh_age = x - age_difference
+    return vignesh_age
+x = int(input())
+if 1 < x < 100:
+    current_vignesh_age = 10
+    current_charan_age = 25
+    result = vignesh_age_at_charan_x(current_vignesh_age, current_charan_age, x)
+    print(result)
+else:
+    print("Invalid input")
