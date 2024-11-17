@@ -1,0 +1,6 @@
+def can_buy_subscription(a, b, c, x):
+    if a + b >= x or a + c >=x or b + c >= x:
+        return "YES"
+    return "NO"
+a, b, c, x = map(int, input().split())
+print(can_buy_subscription(a, b, c, x))
