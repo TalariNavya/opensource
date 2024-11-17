@@ -1,0 +1,9 @@
+def can_complete_assignments(x, y, z):
+    total_time_required = x * y
+    total_time_available = z * 1440
+    if total_time_required <= total_time_available:
+        return "YES"
+    else:
+        return "NO"
+x, y, z = map(int, input().split())
+print(can_complete_assignments(x, y, z))
