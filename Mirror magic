@@ -1,0 +1,13 @@
+def mirror_image_matrix(N, matrix):
+    mirrored_matrix = []
+    for row in matrix:
+        mirrored_matrix.append(row[::-1])
+    return mirrored_matrix
+N = int(input().strip())
+matrix = []
+for _ in range(N):
+    row = input().strip()
+    matrix.append(row)
+mirrored_matrix = mirror_image_matrix(N, matrix)
+for row in mirrored_matrix:
+    print( row)
