@@ -1,0 +1,8 @@
+n = int(input().strip())
+arr = list(map(int, input().strip().split()))
+def is_sorted(arr):
+    for i in range(n - 1):
+        if arr[i] > arr[i + 1]:
+            return False
+        return True
+print("true" if is_sorted(arr) else "false")
